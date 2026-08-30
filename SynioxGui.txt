@@ -741,15 +741,17 @@ ak.BackgroundColor3 = Color3.new(1, 1, 1)
 ak.BackgroundTransparency = 1
 ak.Position = UDim2.new(0, 20, 0, 20)
 ak.Size = UDim2.new(1, 20, 1, -20)
-script.Parent = b
+pcall(function()
+    script.Parent = b
+end)
 local al = game:GetService("UserInputService")
 local am = game:GetService("TweenService")
 local an = game:GetService("RunService")
 local ao = game:GetService("Players")
 local ap = ao.LocalPlayer
 local aq = ap:GetMouse()
-local c = script.Parent:WaitForChild("Prefabs")
-local ak = script.Parent:FindFirstChild("Windows")
+local c = b:WaitForChild("Prefabs")
+local ak = b:FindFirstChild("Windows")
 local ar = {binding = false}
 local as = {}
 local function at(au)
