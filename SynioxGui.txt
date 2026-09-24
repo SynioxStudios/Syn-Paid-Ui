@@ -1977,9 +1977,9 @@ function bd:AddWindow(bi, bj)
     end
     return bx, e
 end
-script.AncestryChanged:Connect(
+b.AncestryChanged:Connect(
     function()
-        if not script.Parent then
+        if not b.Parent then
             av()
         end
     end
